@@ -31,7 +31,7 @@ const Home = ({
     const newPlayDataForm = {};
     console.log("This Song ID:", songId);
     newPlayDataForm.newSong = await getSongAPIMethod(username, songId);
-    newPlayDataForm.allSongs = [];
+    newPlayDataForm.allSongs = await getAllSongAPIMethod(username);
     console.log("Got newSong:", newPlayDataForm.newSong);
     console.log("Got allSongs:", newPlayDataForm.allSongs);
     setPlayDataForm(newPlayDataForm);
