@@ -6,6 +6,7 @@ import Play from "./play";
 import List from "./list";
 import Public from "./public";
 import MyCalendar from "./calendar";
+import SignUp from "./signup";
 
 export default function Main() {
   const [isLoading, setIsLoading] = useState(false);
@@ -79,6 +80,17 @@ export default function Main() {
         <Routes>
           <Route
             path="/"
+            element={
+              <SignUp
+                username={username}
+                setUsername={setUsername}
+                isLoading={isLoading}
+                setIsLoading={setIsLoading}
+              />
+            }
+          />
+          <Route
+            path="/login"
             element={
               <Login
                 username={username}

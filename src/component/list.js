@@ -14,6 +14,8 @@ export default function List({ dataForm, setPlayDataForm, setIsLoading }) {
 
   let musiclist = dataForm.songs;
 
+  console.log("Music List:", musiclist);
+
   const likeMusicList = musiclist.filter((song) => song.like);
 
   const handleSongClick = async (e) => {
@@ -98,7 +100,7 @@ export default function List({ dataForm, setPlayDataForm, setIsLoading }) {
           <div className="arrow arrow-left" onClick={scrollLeftRecent}>
             <img src="prev.svg" className="arrow" alt="Previous" />
           </div>
-          <div className="list1" ref={recentListRef}>
+          <div className="list2" ref={recentListRef}>
             {musiclist.map((song, index) => (
               <div className="list1songs" key={index}>
                 <img
@@ -126,7 +128,7 @@ export default function List({ dataForm, setPlayDataForm, setIsLoading }) {
           <div className="arrow arrow-left" onClick={scrollLeftLikes}>
             <img src="prev.svg" className="arrow" alt="Previous" />
           </div>
-          <div className="list1" ref={likesListRef}>
+          <div className="list2" ref={likesListRef}>
             {likeMusicList.map((song, index) => (
               <div className="list1songs" key={index}>
                 <img

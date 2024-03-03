@@ -23,15 +23,21 @@ form {
 }
 
 .list1 {
-  width: 850px;
-  max-width: calc(100%);
+  width: 100%;
   overflow-x: auto;
   /* border: solid; */
   white-space: nowrap;
   display: flex;
-  justify-content: center;
+  flex-direction: row-reverse;
   gap: 30px;
   /* overflow: hidden; */
+}
+
+.list2 {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: auto;
+  gap: 30px;
 }
 
 .list1songs {

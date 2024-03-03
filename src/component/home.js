@@ -43,6 +43,10 @@ const Home = ({
     setIsLoading(true);
     console.log("Getting all songs...");
     const songs = await getAllSongAPIMethod(username);
+
+    // reverse the order of songs
+    songs.reverse();
+
     console.log("Got all songs:", songs);
     const newListDataForm = {};
     newListDataForm.songs = songs;

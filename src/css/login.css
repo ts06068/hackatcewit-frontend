@@ -14,8 +14,16 @@ input {
   border-radius: 5px;
 }
 
+.input {
+  width: 300px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
 h2 {
-  color: #9570FF;
+  color: #9570ff;
 }
 
 .logo {
@@ -30,7 +38,7 @@ h2 {
   padding: 10px;
   margin: 10px;
   margin-bottom: 20px;
-  background-color: #9570FF;
+  background-color: #9570ff;
   color: #fff;
   border: none;
   border-radius: 5px;
