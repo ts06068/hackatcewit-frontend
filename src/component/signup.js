@@ -28,8 +28,8 @@ export default function SignUp({
       </div>
       <h4 style={{ marginBottom: "0" }}>User Name</h4>
       <input type="text" placeholder="Enter your username" />
-      <h4 style={{ marginBottom: "0" }}>Birthday</h4>
-      <input type="date" placeholder="Date You Are Born" />
+      <h4 style={{ marginBottom: "0" }}>Age</h4>
+      <input type="text" placeholder="Enter your age" />
       <h4 style={{ marginBottom: "0" }}>Gender</h4>
       <select name="genderStatus" id="genderStatus" className="input">
         <option value="Male">Male</option>
@@ -38,7 +38,7 @@ export default function SignUp({
       </select>
       <h4 style={{ marginBottom: "0" }}>Depression Status</h4>
       <select name="depressionStatus" id="depressionStatus" className="input">
-        <option value="Male">Not Depressed</option>
+        <option value="Male">None</option>
         <option value="Female">Vulnerable</option>
         <option value="PreferNotToSay">Severe</option>
       </select>
